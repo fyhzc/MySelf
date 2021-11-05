@@ -19,14 +19,6 @@
 
 * [视频教程](https://youtu.be/F1BEgma4xYA)       * [文字教程](https://github.com/TiyNa/LoonManual)
 
-### Loon插件订阅配置 ：
-
-* [Advertising.plugin](https://raw.githubusercontent.com/laoshur/For-own-use/master/Loon/Plugin/Block/Advertising.plugin) 去广告插件
-
-* [Host.plugin](https://raw.githubusercontent.com/laoshur/For-own-use/master/Loon/Plugin/Host.plugin) Host
-
-* [General.plugin](https://raw.githubusercontent.com/laoshur/For-own-use/master/Loon/Plugin/General.plugin) General
-
 ## 免责声明 ：
 
 * 本项目所有内容均来自互联网，其中涉及的任何解锁和解密分析脚本均是根据自己需要进行调整的，仅用于资源共享和学习研究，不能保证其合法性，准确性，完整性和有效性，请根据情况自行判断.
@@ -60,27 +52,4 @@
 
 * [@Choler](https://github.com/Choler)
 
-* [@onewayticket255](https://github.com/onewayticket255)
-
-* [@NavePnow](https://github.com/NavePnow)
-
-* [@Meeta](https://github.com/MeetaGit)
-
-* [@Neurogram-R](https://github.com/Neurogram-R)
-
-* [@sazs34](https://github.com/sazs34)
-
-* [@id77](https://github.com/id77)
-
 * [@lxk0301](https://github.com/lxk0301)
-
-* [@红鲤鱼与绿鲤鱼与驴](https://github.com/wangdelu2020)
-
-* [@iisams](https://github.com/iisams/Scripts)
-
-* [@barrym-chen](https://github.com/barrym-chen/Script)
-
-* [@ziye12](https://github.com/ziye12/JavaScript)
-
-* [@公众号墨鱼手记](https://github.com/ddgksf2013)
-
