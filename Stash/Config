@@ -1,7 +1,7 @@
 #改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/Config-Stash.yaml，by laoshu
 
 
-# 将proxy-providers里面链接中的“你的订阅链接”全部替换，任意类型的链接均可,如v2ray、Clash等订阅链接
+# 将proxy-providers里面链接中的“你的订阅链接”替换即可
 
 mixed-port: 7890
 allow-lan: true
@@ -14,9 +14,10 @@ external-controller: 127.0.0.1:9090
 proxy-providers:
 
   #全部节点
-  All:
+  All: &All #建立锚点
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true"
+    # 可以使用任意类型的链接替换上面文字，也可以将Clash订阅链接替换掉整个引号""内的链接
     interval: 3600
     path: ./all.yaml
     health-check:
@@ -26,59 +27,24 @@ proxy-providers:
 
   #美国节点    
   US:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(美|🇺🇲|US|(?i)States|American))"
-    interval: 3600
-    path: ./us.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
+    <<: *All #引用锚点内容
+    filter: 美|🇺🇲|US|(?i)States|American
+    
   #香港节点
   HK:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(港|🇭🇰|HK|(?i)Hong))"
-    interval: 3600
-    path: ./hk.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
+    <<: *All
+    filter: 港|🇭🇰|HK|(?i)Hong
 
   #日本节点
   JP:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(日|🇯🇵|东京|JP|(?i)Japan))"
-    interval: 3600
-    path: ./jp.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
-  #韩国节点
-  KR:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(韩|🇰🇷|首尔|KR|(?i)Korea))"
-    interval: 3600
-    path: ./kr.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-      
- #台湾节点
+    <<: *All
+    filter: 日|🇯🇵|东京|JP|(?i)Japan
+ 
+  #台湾节点
   TW:
-    type: http
-    url: "https://api.v1.mk/sub?target=clash&url=你的订阅链接&list=true&udp=true&include=(?=.*(台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan))"
-    interval: 3600
-    path: ./tw.yaml
-    health-check:
-      enable: true
-      interval: 600
-      url: http://www.gstatic.com/generate_204
-
+    <<: *All
+    filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
+   
 dns:
   enable: true
   ipv6: true
@@ -135,7 +101,6 @@ proxy-groups:
       - 自动选择
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
       - DIRECT
@@ -148,7 +113,6 @@ proxy-groups:
       - 自动选择
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
       - DIRECT
@@ -161,7 +125,6 @@ proxy-groups:
       - 自动选择
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
       - DIRECT
@@ -173,7 +136,6 @@ proxy-groups:
       - 台湾节点
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 自动选择
       - 手动切换
@@ -184,20 +146,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Advertising.png
     proxies:
       - REJECT
-      - 手动切换
-
-  - name: PayPal
-    type: select
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
-    proxies:
-      - DIRECT
-      - 手动切换
-      - 自动选择
-      - 香港节点
-      - 日本节点
-      - 韩国节点
-      - 美国节点
-      - 台湾节点
 
   - name: 国外网站
     type: select
@@ -207,7 +155,6 @@ proxy-groups:
       - 自动选择
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
       - DIRECT
@@ -221,7 +168,6 @@ proxy-groups:
       - DIRECT
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
 
@@ -234,7 +180,6 @@ proxy-groups:
       - DIRECT
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
 
@@ -252,7 +197,6 @@ proxy-groups:
       - 自动选择
       - 手动切换
       - 香港节点
-      - 韩国节点
       - 日本节点
       - 美国节点
       - 台湾节点
@@ -266,7 +210,6 @@ proxy-groups:
       - DIRECT
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
 
@@ -279,7 +222,6 @@ proxy-groups:
       - 自动选择
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
 
@@ -292,7 +234,6 @@ proxy-groups:
       - DIRECT
       - 香港节点
       - 日本节点
-      - 韩国节点
       - 美国节点
       - 台湾节点
 
@@ -311,15 +252,7 @@ proxy-groups:
       - JP
     proxies:
       - DIRECT
-      
-  - name: 韩国节点
-    type: select
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
-    use:
-      - KR
-    proxies:
-      - DIRECT
-      
+     
   - name: 台湾节点
     type: select
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
@@ -338,11 +271,25 @@ proxy-groups:
 
 rule-providers:
 
-  adblock:
+  Direct:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/AdvertisingLite/AdvertisingLite_Classical.yaml"
-    path: ./ruleset/Advertising_Classical.yaml
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Direct/Direct.yaml"
+    path: ./ruleset/direct.yaml
+    interval: 86400
+
+  Adblock:
+    type: http
+    behavior: classical
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.yaml"
+    path: ./ruleset/Ad.yaml
+    interval: 86400
+
+  Adblock-Domain:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml"
+    path: ./ruleset/AdDomain.yaml
     interval: 86400
         
   YouTube:
@@ -415,17 +362,26 @@ rule-providers:
     path: ./ruleset/China.yaml
     interval: 86400
 
-  Global_Classical:
+  Global:
     type: http
     behavior: classical
-    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@release/rule/Clash/Global/Global_Classical.yaml"
-    path: ./ruleset/Global_Classical.yaml
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global.yaml"
+    path: ./ruleset/Global.yaml
+    interval: 86400
+
+  Global-Domain:
+    type: http
+    behavior: domain
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Global/Global_Domain.yaml"
+    path: ./ruleset/Global-Domain.yaml
     interval: 86400
 
 
 
 rules:
-  - RULE-SET,adblock,AdBlock
+  - RULE-SET,Direct,DIRECT
+  - RULE-SET,Adblock,AdBlock
+  - RULE-SET,Adblock-Domain,AdBlock
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,NETFLIX
   - RULE-SET,Disney,Disney+
@@ -435,7 +391,8 @@ rules:
   - RULE-SET,NetEaseMusic,网易音乐
   - RULE-SET,BiliBili,哔哩哔哩
   - RULE-SET,Game,游戏平台
-  - RULE-SET,Global_Classical,国外网站
+  - RULE-SET,Global,国外网站
+  - RULE-SET,Global-Domain,国外网站
   - RULE-SET,China,国内网站
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
