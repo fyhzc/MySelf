@@ -17,7 +17,7 @@ proxy-providers:
   All: &All #建立锚点
     type: http
     url: "https://api.v1.mk/sub?target=clash&url=https://subscribe.bityun.org/api/v1/client/subscribe?token=025987e2232f11dde7f121ba4d3754&list=true&udp=true"
-    # 可以使用任意类型的链接替换上面文字，也可以将Clash订阅链接替换掉整个引号""内的链接
+    # 可以使用任意类型的链接替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可；也可以将Clash订阅链接替换掉整个引号""内的链接
     interval: 3600
     path: ./all.yaml
     health-check:
@@ -28,7 +28,7 @@ proxy-providers:
   #美国节点    
   US:
     <<: *All #引用锚点内容
-    filter: 美|🇺🇲|US|(?i)States|American
+    filter: 美|🇺🇲|US|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|(?i)States|American
     
   #香港节点
   HK:
@@ -38,12 +38,12 @@ proxy-providers:
   #日本节点
   JP:
     <<: *All
-    filter: 日|🇯🇵|东京|JP|(?i)Japan
+    filter: 日|🇯🇵|东京|JP|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?i)Japan
  
   #台湾节点
   TW:
     <<: *All
-    filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
+    filter: 台|🇨🇳|🇹🇼|湾|TW|Tai|(?i)Taiwan
    
 dns:
   enable: true
@@ -52,7 +52,6 @@ dns:
   default-nameserver:
     - 119.29.29.29
     - 223.5.5.5
-    - 8.8.4.4
   enhanced-mode: fake-ip
   fake-ip-range: 198.18.0.1/16
   fake-ip-filter:
@@ -72,7 +71,6 @@ dns:
   nameserver:
     - https://doh.pub/dns-query
     - https://dns.alidns.com/dns-query
-    - https://dns.google/dns-query
 
 proxies:
             
@@ -165,11 +163,11 @@ proxy-groups:
     proxies:
       - 手动切换
       - 自动选择
-      - DIRECT
       - 香港节点
       - 日本节点
       - 美国节点
       - 台湾节点
+      - DIRECT
 
   - name: 微软服务
     type: select
@@ -177,11 +175,11 @@ proxy-groups:
     proxies:
       - 手动切换
       - 自动选择
-      - DIRECT
       - 香港节点
       - 日本节点
       - 美国节点
       - 台湾节点
+      - DIRECT
 
   - name: 网易音乐
     type: select
@@ -207,11 +205,11 @@ proxy-groups:
     proxies:
       - 手动切换
       - 自动选择
-      - DIRECT
       - 香港节点
       - 日本节点
       - 美国节点
       - 台湾节点
+      - DIRECT
 
   - name: 国内网站
     type: select
@@ -231,11 +229,11 @@ proxy-groups:
     proxies:
       - 手动切换
       - 自动选择
-      - DIRECT
       - 香港节点
       - 日本节点
       - 美国节点
       - 台湾节点
+      - DIRECT
 
   - name: 香港节点
     type: select
