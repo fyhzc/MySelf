@@ -41,12 +41,12 @@ proxy-providers:
     filter: 日|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|(?i)Japan
  
   #韩国节点
-  TW:
+  KR:
     <<: *All
     filter: 韩|KR|KOR|Seoul|Chuncheon|首尔|春川|韩|韓|(?i)Korea
     
   #新加坡节点
-  TW:
+  SG:
     <<: *All
     filter: 坡|新加坡|坡|狮城|SG|Singapore|(?i)Singapore
 
