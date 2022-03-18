@@ -44,7 +44,7 @@ proxy-providers:
   TW:
     <<: *All
     filter: 韩|KR|KOR|Seoul|Chuncheon|首尔|春川|韩|韓|(?i)Korea
-	
+    
   #新加坡节点
   TW:
     <<: *All
