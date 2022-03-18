@@ -1,6 +1,4 @@
-#改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/Config-Stash.yaml，by laoshu
-
-# 将proxy-providers里面链接中的“你的订阅链接”替换即可
+#改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/Config-Stash.yaml，by laoshu 2022.03.18 09:00
 
 mixed-port: 7890
 allow-lan: true
@@ -28,7 +26,7 @@ proxy-providers:
   #美国节点    
   US:
     <<: *All #引用锚点内容
-    filter: 美|🇺🇲|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|(?i)States|American
+    filter: 美|🇺🇲|US|(?i)States|American
     
   #香港节点
   HK:
@@ -38,23 +36,13 @@ proxy-providers:
   #日本节点
   JP:
     <<: *All
-    filter: 日|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|(?i)Japan
+    filter: 日|🇯🇵|东京|JP|(?i)Japan
  
-  #韩国节点
-  KR:
-    <<: *All
-    filter: 韩|KR|KOR|Seoul|Chuncheon|首尔|春川|韩|韓|(?i)Korea
-    
-  #新加坡节点
-  SG:
-    <<: *All
-    filter: 坡|新加坡|坡|狮城|SG|Singapore|(?i)Singapore
-
   #台湾节点
   TW:
     <<: *All
-    filter: 台|🇨🇳|🇹🇼|湾|TW|Tai|(?i)Taiwan	
-
+    filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
+   
 dns:
   enable: true
   ipv6: true
@@ -110,9 +98,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
       - DIRECT
 
   - name: NETFLIX
@@ -124,9 +110,31 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
+      - DIRECT
+
+  - name: Disney+
+    type: select
+    icon: https://raw.githubusercontent.com/Orz-3/mini/master/Color/DisneyPlus.png
+    proxies:
+      - 手动切换
+      - 自动选择
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 台湾节点
+      - DIRECT
+
+  - name: 巴哈姆特
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Bahamut.png
+    proxies:
+      - 台湾节点
+      - 香港节点
+      - 日本节点
+      - 美国节点
+      - 自动选择
+      - 手动切换
       - DIRECT
 
   - name: AdBlock
@@ -144,9 +152,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
       - DIRECT
 
   - name: 苹果服务
@@ -158,9 +164,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
       - DIRECT
 
   - name: 微软服务
@@ -172,9 +176,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
       - DIRECT
 
   - name: 网易音乐
@@ -188,14 +190,12 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/bilibili_3.png
     proxies:
       - DIRECT
-      - 手动切换
       - 自动选择
+      - 手动切换
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
 
   - name: 游戏平台
     type: select
@@ -206,9 +206,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
       - DIRECT
 
   - name: 国内网站
@@ -221,9 +219,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
 
   - name: 漏网之鱼
     type: select
@@ -234,9 +230,7 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
-      - 韩国节点
       - 台湾节点
-      - 新加坡节点
       - DIRECT
 
   - name: 香港节点
@@ -268,22 +262,6 @@ proxy-groups:
     icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
     use:
       - US
-    proxies:
-      - DIRECT
-
-  - name: 韩国节点
-    type: select
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
-    use:
-      - KR
-    proxies:
-      - DIRECT
-
-  - name: 新加坡节点
-    type: select
-    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
-    use:
-      - SG
     proxies:
       - DIRECT
 
@@ -324,6 +302,20 @@ rule-providers:
     path: ./ruleset/Netflix.yaml
     interval: 86400
 
+  Disney:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Disney/Disney.yaml"
+    path: ./ruleset/Disney.yaml
+    interval: 86400
+
+  Bahamut:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Bahamut/Bahamut.yaml"
+    path: ./ruleset/Bahamut.yaml
+    interval: 86400
+
   Apple:
     type: http
     behavior: classical
@@ -352,6 +344,13 @@ rule-providers:
     path: ./ruleset/BiliBili.yaml
     interval: 86400
 
+  Game:
+    type: http
+    behavior: classical
+    url: "https://cdn.jsdelivr.net/gh/blackmatrix7/ios_rule_script@master/rule/Clash/Game/Game.yaml"
+    path: ./ruleset/Game.yaml
+    interval: 86400
+
   China:
     type: http
     behavior: classical
@@ -373,16 +372,21 @@ rule-providers:
     path: ./ruleset/Global-Domain.yaml
     interval: 86400
 
+
+
 rules:
   - RULE-SET,Direct,DIRECT
   - RULE-SET,Adblock,AdBlock
   - RULE-SET,Adblock-Domain,AdBlock
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,NETFLIX
+  - RULE-SET,Disney,Disney+
+  - RULE-SET,Bahamut,巴哈姆特
   - RULE-SET,Apple,苹果服务
   - RULE-SET,Microsoft,微软服务
   - RULE-SET,NetEaseMusic,网易音乐
   - RULE-SET,BiliBili,哔哩哔哩
+  - RULE-SET,Game,游戏平台
   - RULE-SET,Global,国外网站
   - RULE-SET,Global-Domain,国外网站
   - RULE-SET,China,国内网站
