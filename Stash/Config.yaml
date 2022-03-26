@@ -48,12 +48,12 @@ proxy-providers:
   #韩国节点
   KR:
     <<: *All
-    filter: |韩|KR|Korea|KOR|首尔|春川|Seoul|Chuncheon|韓|(?i)Korea
+    filter: 韩|KR|KOR|首尔|春川|Seoul|Chuncheon|韓|(?i)Korea
   
   #新加坡节点
   SG:
     <<: *All
-    filter: 坡|新加坡|狮城|SG|Singapore|(?i)Singapore
+    filter: 坡|SG|新加坡|狮城|(?i)Singapore
     
 dns:
   enable: true
