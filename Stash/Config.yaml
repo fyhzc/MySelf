@@ -1,4 +1,6 @@
-#改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/Config-Stash.yaml，by laoshu 2022.03.18 09:00
+#改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/配置模板/Config-Stash.yaml，by laoshu 2022.03.26 17:00
+
+# 将proxy-providers里面链接中的“你的订阅链接”替换即可
 
 mixed-port: 7890
 allow-lan: true
@@ -13,7 +15,7 @@ proxy-providers:
   #全部节点
   All: &All #建立锚点
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://subscribe.bityun.org/api/v1/client/subscribe?token=025987e2232f11dde7f121ba4d3754&list=true&udp=true"
+    url: "https://api.v1.mk/sub?target=clash&url=订阅链接&list=true&udp=true"
     # 可以使用任意类型的链接替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可；
     # 或者将Clash订阅链接替换掉整个引号""内的链接
     interval: 3600
@@ -26,7 +28,7 @@ proxy-providers:
   #美国节点    
   US:
     <<: *All #引用锚点内容
-    filter: 美|🇺🇲|US|(?i)States|American
+    filter: 美|🇺🇲|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|US|(?i)States|American
     
   #香港节点
   HK:
@@ -36,13 +38,23 @@ proxy-providers:
   #日本节点
   JP:
     <<: *All
-    filter: 日|🇯🇵|东京|JP|(?i)Japan
+    filter: 日|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|(?i)Japan
  
   #台湾节点
   TW:
     <<: *All
     filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
-   
+ 
+  #韩国节点
+  KR:
+    <<: *All
+    filter: KR|Korea|KOR|首尔|韩|韓|(?i)Korea
+  
+  #新加坡节点
+  SG:
+    <<: *All
+    filter: 新加坡|坡|狮城|SG|Singapore|(?i)Singapore
+    
 dns:
   enable: true
   ipv6: true
@@ -99,6 +111,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: NETFLIX
@@ -111,6 +125,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: Disney+
@@ -123,6 +139,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: 巴哈姆特
@@ -133,6 +151,8 @@ proxy-groups:
       - 香港节点
       - 日本节点
       - 美国节点
+      - 韩国节点
+      - 新加坡节点
       - 自动选择
       - 手动切换
       - DIRECT
@@ -153,6 +173,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: 苹果服务
@@ -165,6 +187,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: 微软服务
@@ -177,6 +201,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: 网易音乐
@@ -196,6 +222,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
 
   - name: 游戏平台
     type: select
@@ -207,6 +235,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: 国内网站
@@ -220,6 +250,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
 
   - name: 漏网之鱼
     type: select
@@ -231,6 +263,8 @@ proxy-groups:
       - 日本节点
       - 美国节点
       - 台湾节点
+      - 韩国节点
+      - 新加坡节点
       - DIRECT
 
   - name: 香港节点
@@ -264,6 +298,22 @@ proxy-groups:
       - US
     proxies:
       - DIRECT
+      
+  - name: 韩国节点
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Korea.png
+    use:
+      - KR
+    proxies:
+      - DIRECT
+      
+  - name: 新加坡节点
+    type: select
+    icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+    use:
+      - SG
+    proxies:
+      - DIRECT
 
 rule-providers:
 
@@ -274,17 +324,10 @@ rule-providers:
     path: ./ruleset/direct.yaml
     interval: 86400
 
-  Adblock:
-    type: http
-    behavior: classical
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite.yaml"
-    path: ./ruleset/Ad.yaml
-    interval: 86400
-
   Adblock-Domain:
     type: http
     behavior: domain
-    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml"
+    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
     path: ./ruleset/AdDomain.yaml
     interval: 86400
         
@@ -372,11 +415,8 @@ rule-providers:
     path: ./ruleset/Global-Domain.yaml
     interval: 86400
 
-
-
 rules:
   - RULE-SET,Direct,DIRECT
-  - RULE-SET,Adblock,AdBlock
   - RULE-SET,Adblock-Domain,AdBlock
   - RULE-SET,YouTube,YouTube
   - RULE-SET,Netflix,NETFLIX
