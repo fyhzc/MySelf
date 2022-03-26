@@ -1,7 +1,5 @@
 #改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/配置模板/Config-Stash.yaml，by laoshu 2022.03.26 17:00
 
-# 将proxy-providers里面链接中的“你的订阅链接”替换即可
-
 mixed-port: 7890
 allow-lan: true
 bind-address: '*'
@@ -48,7 +46,7 @@ proxy-providers:
   #韩国节点
   KR:
     <<: *All
-    filter: 韩|KR|KOR|首尔|春川|Seoul|Chuncheon|韓|(?i)Korea
+    filter: 韩|KR|KOR|韩国|首尔|春川|Seoul|Chuncheon|韓|(?i)Korea
   
   #新加坡节点
   SG:
