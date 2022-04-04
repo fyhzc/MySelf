@@ -1,0 +1,17 @@
+name: VSCO 
+desc: 解锁高级特权
+
+http:
+  mitm:
+    - "xy-viva.kakalili.com"
+  script:
+    - match: ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/
+      name: VSCO
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  VSCO:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+    interval: 3600
