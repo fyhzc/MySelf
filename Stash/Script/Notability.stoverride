@@ -1,0 +1,17 @@
+name: Notability
+desc: 解锁订阅
+
+http:
+  mitm:
+    - "*.intsig.net"
+  script:
+    - match: ^https:\/\/notability\.com\/subscriptions
+      name: notability
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  notability:
+    url: https://raw.githubusercontent.com/PoetryU/Scientist/master/Scripts/notabilityvip.js
+    interval: 3600
