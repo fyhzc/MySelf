@@ -13,5 +13,5 @@ http:
       
 script-providers:
   VSCO:
-    url: https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/vsco.js
+    url: https://raw.githubusercontent.com/githubdulong/Script/master/vsco.js
     interval: 3600
