@@ -28,7 +28,7 @@ proxy-providers:
   #美国    
   US:
     <<: *All #引用锚点内容
-    filter: 美|🇺🇲|美国|US|(?i)States|American
+    filter: 美|🇺🇲|美国|洛杉矶|西雅图|US|(?i)States|American
     
   #香港
   HK:
