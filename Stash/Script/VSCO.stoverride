@@ -3,7 +3,7 @@ desc: 解锁高级特权
 
 http:
   mitm:
-    - "xy-viva.kakalili.com"
+    - "vsco.co,api.revenuecat.com"
   script:
     - match: ^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/
       name: VSCO
