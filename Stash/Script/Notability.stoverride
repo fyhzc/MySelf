@@ -3,7 +3,7 @@ desc: 解锁订阅
 
 http:
   mitm:
-    - "*.intsig.net"
+    - "notability.com"
   script:
     - match: ^https:\/\/notability\.com\/subscriptions
       name: notability
