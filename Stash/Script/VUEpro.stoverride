@@ -1,5 +1,5 @@
 name: VUE pro
-desc: 解锁会员
+desc: 解锁PRO会员，享用专业功能
 
 http:
   mitm:
