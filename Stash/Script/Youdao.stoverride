@@ -1,5 +1,5 @@
 name: 有道云笔记
-desc: 解锁VIP
+desc: 解锁VIP高级功能
 
 http:
   mitm:
