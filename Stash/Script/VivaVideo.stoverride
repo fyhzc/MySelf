@@ -6,12 +6,12 @@ http:
     - "xy-viva.kakalili.com"
   script:
     - match: ^https:\/\/xy-viva\.kakalili\.com\/api\/rest\/u\/vipVerifyReceipt
-      name: Vivavideo
+      name: VivaVideo
       type: response
       require-body: true
       timeout: 10
       
 script-providers:
-  Vivavideo:
+  VivaVideo:
     url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
     interval: 3600
