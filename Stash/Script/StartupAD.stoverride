@@ -1,5 +1,5 @@
 name: 开屏去广告
-desc: 去除部分APP开屏广告，具体APP请直接进入链接查看
+desc: 去除部分APP开屏广告
 
 http:
   mitm:
