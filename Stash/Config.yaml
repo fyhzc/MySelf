@@ -31,7 +31,7 @@ proxy-providers:
   #香港节点
   HK:
     <<: *All
-    filter: 港|🇭🇰|HK|(?i)Hong
+    filter: 港|🇭🇰|香港|HK|(?i)Hong
 
   #日本节点
   JP:
@@ -41,17 +41,17 @@ proxy-providers:
   #台湾节点
   TW:
     <<: *All
-    filter: 台|🇨🇳|🇹🇼|湾|TW|(?i)Taiwan
+    filter: 台|🇨🇳|🇹🇼|台湾|TW|(?i)Taiwan
  
   #韩国节点
   KR:
     <<: *All
-    filter: 韩|🇰🇷|KOR|韩国|首尔|春川|Seoul|Chuncheon|韓|(?i)Korea
+    filter: 韩|🇰🇷|韩国|韓|首尔|春川|Seoul|Chuncheon|KOR|(?i)Korea
   
   #新加坡节点
   SG:
     <<: *All
-    filter: 坡|🇸🇬|新加坡|狮城|(?i)Singapore
+    filter: 坡|🇸🇬|新加坡|狮城|SG|SGP|(?i)Singapore
     
 dns:
   enable: true
