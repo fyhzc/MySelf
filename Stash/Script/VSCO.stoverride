@@ -1,0 +1,17 @@
+name: VSCO
+desc: 解锁会员
+
+http:
+  mitm:
+    - "api.revenuecat.com"
+  script:
+    - match: ^https:\/\/api\.revenuecat\.com\/v\d\/subscribers\/\d+$
+      name: VSCO
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  VSCO:
+    url: https://raw.githubusercontent.com/Tartarus2014/Script/master/vsco.js
+    interval: 3600
