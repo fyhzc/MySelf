@@ -1,4 +1,4 @@
-#改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/配置模板/Config-Stash.yaml，by laoshu 2022.03.26 17:00
+#改自https://github.com/Infatuation-Fei/rule/blob/main/Stash/配置模板/Config-Stash.yaml，by laoshu 2022.04.04 13:00
 
 mixed-port: 7890
 allow-lan: true
@@ -325,7 +325,7 @@ rule-providers:
   Adblock-Domain:
     type: http
     behavior: domain
-    url: "https://cdn.jsdelivr.net/gh/Loyalsoldier/clash-rules@release/reject.txt"
+    url: "https://ghproxy.com/https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/AdvertisingLite/AdvertisingLite_Domain.yaml"
     path: ./ruleset/AdDomain.yaml
     interval: 86400
         
