@@ -5,7 +5,7 @@ http:
   mitm:
     - "notability.com"
   script:
-    - match: ^https:\/\/notability\.com\/subscriptions
+    - match: ^https?:\/\/notability\.com\/subscriptions
       name: notability
       type: response
       require-body: true
@@ -13,5 +13,5 @@ http:
       
 script-providers:
   notability:
-    url: https://raw.githubusercontent.com/PoetryU/Scientist/master/Scripts/notabilityvip.js
+    url: https://raw.githubusercontent.com/yqc007/QuantumultX/master/NotabilityProCrack.js
     interval: 3600
