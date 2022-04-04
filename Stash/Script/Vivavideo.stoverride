@@ -1,0 +1,17 @@
+name: 小影VIP
+desc: 解锁订阅
+
+http:
+  mitm:
+    - "xy-viva.kakalili.com"
+  script:
+    - match: ^https:\/\/xy-viva\.kakalili\.com\/api\/rest\/u\/vipVerifyReceipt
+      name: Vivavideo
+      type: response
+      require-body: true
+      timeout: 10
+      
+script-providers:
+  Vivavideo:
+    url: https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/vivavideo.js
+    interval: 3600
