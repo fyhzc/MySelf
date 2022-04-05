@@ -40,7 +40,7 @@ proxy-providers:
   #全部节点
   All: &Ser
     type: http
-    url: "https://api.v1.mk/sub?target=clash&url=https://subscribe.bityun.org/api/v1/client/subscribe?token=025987e2232f11dde7f121ba4d375418|https://raw.githubusercontent.com/bibibile/subscribe/main/777|https://api.ikuuu.science/link/nvij6IRZaxVsfw6P?sub=3&extend=1&list=true&udp=true"
+    url: "https://api.v1.mk/sub?target=clash&url=你的订阅&list=true&udp=true"
     # 可以使用任意类型的链接替换上面文字，多个链接使用英文符号的竖杠|隔开一起写上即可；
     # 或者将Clash订阅链接替换掉整个引号""内的链接
     interval: 3600
