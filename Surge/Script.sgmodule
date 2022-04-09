@@ -12,7 +12,7 @@ DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
 # > 京东库代理
 DOMAIN-SUFFIX,jdsharedresourcescdn.azureedge.net,𝐏𝐫𝐨𝐱𝐲
 # > 腾讯视频 修护+去广告
-DOMAIN,vv.video.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
+DOMAIN,vv.video.qq.com,𝑫𝑰𝑹𝑬𝑪𝑻
 URL-REGEX,^https?:\/\/pgdt\.gtimg\.cn,𝑹𝑬𝑱𝑬𝑪𝑻
 URL-REGEX,^https?:\/\/c\.l\.qq\/.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 交管12123 去广告
