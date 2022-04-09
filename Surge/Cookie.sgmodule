@@ -29,14 +29,10 @@
 什么值买 = script-path=https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/script/smzdm/smzdm_signin.js,type=http-request,requires-body=true,pattern=^https?:\/\/zhiyou\.smzdm\.com\/user$
 # > 电信签到 app获取（boxjs填写号码）
 电信签到 = type=http-request,pattern=^https:\/\/wapside.189.cn:9001\/jt-sign\/api\/home\/homeInfo,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/10000/10000.cookie.js,requires-body=true
-# > 小米运动 app登陆时获取
-小米运动 = type=http-response,pattern=^https:\/\/account\.huami\.com\/v2\/client\/login, requires-body=1, max-size=0, script-path=https://raw.githubusercontent.com/githubdulong/Script/master/xmSports.js
 # > 哔哩哔哩 登陆https://www.bilibili.com/
 哔哩哔哩 = type=http-request,pattern=^https:\/\/(www|live)\.bilibili\.com\/?.?,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/bilibili/bilibili.cookie.js,script-update-interval=0
-# > 威锋论坛 app获取
-威锋论坛 = type=http-request,pattern=^https?:\/\/api.wfdata.club\/v1\/auth\/signin,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/feng/feng.cookie.js,requires-body=true
 # > 爱奇艺 登陆https://m.iqiyi.com/user.html
 奇艺获取 = type=http-request,pattern=^https:\/\/passport\.iqiyi\.com\/apis\/user\/info\.action,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/iQIYI-DailyBonus/iQIYI.js
 
 [MITM]
-hostname = %INSERT% me-api.jd.com, music.163.com, 113.96.156.178, *.ximalaya.com, e.189.cn, i.meituan.com, api.weibo.cn, m.weibo.cn, draw.jdfcloud.com, *.m.163.com,  *.xxjjappss.com,*.*.mob.com,*.huaerdadi.com, zhiyou.smzdm.com, jdjoy.jd.com, account.huami.com, my.ruanmei.com, wapside.189.cn:9001, *.bilibili.com, api.wfdata.club, passport.iqiyi.com
+hostname = %INSERT% me-api.jd.com, music.163.com, 113.96.156.178, *.ximalaya.com, e.189.cn, i.meituan.com, api.weibo.cn, m.weibo.cn, draw.jdfcloud.com, *.m.163.com, zhiyou.smzdm.com, jdjoy.jd.com, wapside.189.cn:9001, *.bilibili.com, passport.iqiyi.com
