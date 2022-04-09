@@ -4,45 +4,45 @@
 
 [Rule]
 # > 爱奇艺 去暂停广告
-DOMAIN-SUFFIX,cupid.iqiyi.com,REJECT
+DOMAIN-SUFFIX,cupid.iqiyi.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 京东 去广告
-URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,REJECT-TINYGIF
+URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,𝑻𝑰𝑵𝒀𝑮𝑰𝑭
 # > boxjs代理
-DOMAIN,boxjs.net,𝐏𝐫𝐨𝐱𝐲
+DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
 # > 京东库代理
 DOMAIN-SUFFIX,jdsharedresourcescdn.azureedge.net,𝐏𝐫𝐨𝐱𝐲
 # > 腾讯视频 修护+去广告
 DOMAIN,vv.video.qq.com,𝗗𝗜𝗥𝗘𝗖𝗧
-URL-REGEX,^https?:\/\/pgdt\.gtimg\.cn,REJECT
-URL-REGEX,^https?:\/\/c\.l\.qq\/.com,REJECT
+URL-REGEX,^https?:\/\/pgdt\.gtimg\.cn,𝑹𝑬𝑱𝑬𝑪𝑻
+URL-REGEX,^https?:\/\/c\.l\.qq\/.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 交管12123 去广告
-URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,REJECT
+URL-REGEX,^https:\/\/gab\.122\.gov\.cn\/eapp\/m\/sysquery\/adver$,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 京东极速版 去广告
-URL-REGEX,https://api.m.jd.com/client.action\?functionId=lite_advertising,REJECT
+URL-REGEX,https://api.m.jd.com/client.action\?functionId=lite_advertising,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 滴滴出行 去广告
 //01安全提示横幅
-URL-REGEX,^https:\/\/guard\.sec\.xiaojukeji\.com\/api\/guard\/psg\/v2\/getShieldStatus,REJECT
+URL-REGEX,^https:\/\/guard\.sec\.xiaojukeji\.com\/api\/guard\/psg\/v2\/getShieldStatus,𝑹𝑬𝑱𝑬𝑪𝑻
 //02底部打车&代价推荐
-URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/one,REJECT
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/one,𝑹𝑬𝑱𝑬𝑪𝑻
 //03福利专区-金融服务-公交-骑车-滴滴乐园
-URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/nav\/widget,REJECT
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/nav\/widget,𝑹𝑬𝑱𝑬𝑪𝑻
 //04接送机-优惠商城
-URL-REGEX,^https:\/\/api\.udache\.com\/gulfstream,REJECT
+URL-REGEX,^https:\/\/api\.udache\.com\/gulfstream,𝑹𝑬𝑱𝑬𝑪𝑻
 //05 主页领任务
-URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/api\/(component|fusion|dynamicmodule|usercenter),REJECT
-URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/dynamic,REJECT
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/api\/(component|fusion|dynamicmodule|usercenter),𝑹𝑬𝑱𝑬𝑪𝑻
+URL-REGEX,^https:\/\/conf\.diditaxi\.com\.cn\/dynamic,𝑹𝑬𝑱𝑬𝑪𝑻
 //主页 非主流式悬浮挂件
-URL-REGEX,^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget,REJECT
+URL-REGEX,^https:\/\/res\.xiaojukeji\.com\/resapi\/activity\/mget,𝑹𝑬𝑱𝑬𝑪𝑻
 //07商城
-URL-REGEX,^https:\/\/shop-gw\.chengxinyouxuan\.com\/(route|indexConfig|apolloConfig|getShopTuanInfos),REJECT
+URL-REGEX,^https:\/\/shop-gw\.chengxinyouxuan\.com\/(route|indexConfig|apolloConfig|getShopTuanInfos),𝑹𝑬𝑱𝑬𝑪𝑻
 //08开屏广告
-URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static,REJECT
+URL-REGEX,^https:\/\/img-ys011\.didistatic\.com\/static,𝑹𝑬𝑱𝑬𝑪𝑻
 //09骑行
-URL-REGEX,^https:\/\/pt-starimg\.didistatic\.com\/static,REJECT
+URL-REGEX,^https:\/\/pt-starimg\.didistatic\.com\/static,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 云闪付 去广告
-URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,REJECT
+URL-REGEX,^https:\/\/wallet\.95516\.com\/s\/wl\/icon\/long,𝑹𝑬𝑱𝑬𝑪𝑻
 # > 拼多多 去广告
-URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,REJECT
+URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,𝑹𝑬𝑱𝑬𝑪𝑻
 
 [URL Rewrite]
 # > TikTok换区
