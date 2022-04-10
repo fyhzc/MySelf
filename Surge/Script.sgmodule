@@ -57,11 +57,6 @@ URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,�
 [Panel]
 策略面板 = script-name=缓存开关,update-interval=60
 策略面板 = script-name=代理选择,update-interval=300
-Panel = title=𝐥𝐚𝐨𝐬𝐡𝐮@𝐒𝐮𝐫𝐠𝐞𝐏𝐫𝐨, content=GitHub:https://github.com/laoshur,icon=aqi.medium,icon-color=#5AC8FA
-Sub_info_panel = script-name=Sub_info_panel,update-interval=600
-Sub_info_panel1 = script-name=Sub_info_panel1,update-interval=600
-网络信息 = script-name=网络信息,title=网络信息,content=请刷新,style=info,update-interval=60
-配置重载 = title=配置重载,content=配置重载,style=info,script-name=配置重载,update-interval=-1
 
 [Script]
 # > 新浪微博 去广告
