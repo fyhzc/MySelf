@@ -88,8 +88,6 @@ http-response https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoo
 滤镜破解 = type=http-response,pattern=^https:\/\/(api\.revenuecat\.com\/v\d\/subscribers|vsco\.co\/api\/subscriptions\/\d\.\d\/user-subscriptions)\/,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/vsco.js,script-update-interval=0
 # > 小红书 去广告
 红书广告 = type=http-response,pattern=^https?:\/\/edith\.xiaohongshu\.com\/api\/sns\/v2\/system_service\/splash_config,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/chouchoui/QuanX/master/Scripts/xiaohongshu/xiaohongshu.ad.js
-# > phothop 解锁
-ＰＳ修图 = type=http-response,pattern=^https:\/\/lcs-mobile-cops\.adobe\.io\/mobile_profile,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Quantumult-X-LK/master/Scripts/langkhach/photoshop.js,script-update-interval=0
 # > xmind思维导图 解锁
 思维导图 = type=http-response,pattern=https?:\/\/.*\.xmind\..*\/_res\/(devices|user_sub_status|appstore/sub),requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/langkhach270389/Surge-LK/main/scripts/langkhach/xmind.js,script-update-interval=0
 # > 空气质量 US
@@ -112,4 +110,4 @@ http-response https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoo
 //模块更新捷径 https://www.icloud.com/shortcuts/67c3ace4fb3a4f9ebbe8d3184cd82e39
 
 [MITM]
-hostname = raw.githubusercontent.com, spclient.wg.spotify.com, %APPEND% ap?.bilibili.com, ap?.biliapi.net, api.live.bilibili.com, www.bilibili.com, btrace.qq.com,vsco.co,*.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com,security.wechat.com, api.polaxiong.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,lcs-mobile-cops.adobe.io, api.m.jd.com, gab.122.gov.cn, *.xmind.*, weather-data.apple.com, as.xiaojukeji.com, pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com, wallet.95516.com, pgdt.gtimg.cn, c.l.qq.com, api.daoshang.online, api.yangkeduo.com,api.pinduoduo.com, bkw-legacy.oss-cn-shenzhen.aliyuncs.com, edith.xiaohongshu.com
+hostname = raw.githubusercontent.com, spclient.wg.spotify.com, %APPEND% ap?.bilibili.com, ap?.biliapi.net, api.live.bilibili.com, www.bilibili.com, btrace.qq.com,vsco.co,*.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com,security.wechat.com, api.polaxiong.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,api.m.jd.com, gab.122.gov.cn, *.xmind.*, weather-data.apple.com, as.xiaojukeji.com, pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com, wallet.95516.com, pgdt.gtimg.cn, c.l.qq.com, api.daoshang.online, api.yangkeduo.com,api.pinduoduo.com, bkw-legacy.oss-cn-shenzhen.aliyuncs.com, edith.xiaohongshu.com
