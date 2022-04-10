@@ -4,7 +4,10 @@
 [Rule]
 # > 爱奇艺 去暂停广告
 DOMAIN-SUFFIX,cupid.iqiyi.com,𝑹𝑬𝑱𝑬𝑪𝑻
-# > 京东 去广告
+# 哔哩哔哩  去广告
+URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),𝑹𝑬𝑱𝑬𝑪𝑻
+URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,𝑹𝑬𝑱𝑬𝑪𝑻
+# > 京东  去启动广告，必须是REJECT-TINYGIF, 否则比价会失效
 URL-REGEX,^https?:\/\/api\.m\.jd\.com\/client\.action\?functionId=start$,𝑻𝑰𝑵𝒀𝑮𝑰𝑭
 # > boxjs代理
 DOMAIN,boxjs.com,𝐏𝐫𝐨𝐱𝐲
@@ -68,9 +71,15 @@ URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,�
 会话数据 = type=http-request,pattern=^https?:\/\/boxjs\.net,script-path=https://raw.githubusercontent.com/chavyleung/scripts/master/box/chavy.boxjs.js, requires-body=true, timeout=120
 # > 京东App 历史价格 
 京东比价 = type=http-response,requires-body=1,pattern=^https?://api\.m\.jd\.com/client\.action\?functionId=(wareBusiness|serverConfig|basicConfig),script-path=https://raw.githubusercontent.com/githubdulong/Script/master/jd_price.js
-# > bilbii 换区、评分
+
+# > bilbii 自动根据番剧自动切换地区、评分
 哔哩换区 = type=http-response,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/(pgc\/view\/v\d\/app\/season|x\/v\d\/search\/defaultwords)\?access_key,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
 哔哩搜索 = type=http-request,pattern=^https:\/\/ap(p|i)\.bili(bili|api)\.(com|net)\/x\/v\d\/search(\/type)?\?.+?%20(%E6%B8%AF|%E5%8F%B0|%E4%B8%AD)&,script-path=https://raw.githubusercontent.com/NobyDa/Script/master/Surge/JS/Bili_Auto_Regions.js
+# 个人中心
+http-response https://app.bilibili.com/x/v2/account/mine\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20account.js,tag=哔哩哔哩个人中心(精简)
+http-response https://app.bilibili.com/x/v2/view\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20view%20relate.js,tag=哔哩哔哩个人中心(精简)
+http-response https://api.bilibili.com/x/v2/reply/main\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20reply.js,tag=哔哩哔哩个人中心(精简)
+http-response https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoom\?access_key requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/onewayticket255/Surge-Script/master/surge%20bilibili%20live.js,tag=哔哩哔哩直播
 # > 百度云盘 解锁
 百度云盘 = type=http-response,pattern=https:\/\/pan\.baidu\.com\/rest\/2\.0\/membership\/user,requires-body=1,max-size=0,script-path=https://raw.githubusercontent.com/ddgksf2013/Cuttlefish/master/Crack/bdcloud.js,script-update-interval=0
 # > MIX 解锁
@@ -97,15 +106,10 @@ URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,�
 //贴吧去除广告 https://raw.githubusercontent.com/app2smile/rules/master/module/tieba.sgmodule
 //spotify解锁 https://raw.githubusercontent.com/app2smile/rules/master/module/spotify.module
 //Siri区域解锁 https://raw.githubusercontent.com/VirgilClyne/iRingo/main/sgmodule/Siri_Suggestions_for_Uppercase_PROXY.sgmodule
-//京东助手(注入式需key）https://raw.githubusercontent.com/githubdulong/Script/master/jdHelper.sgmodule
-//京东联盟转链（联盟、助手二选一）https://raw.githubusercontent.com/githubdulong/Script/master/Surge/jdapp_to_union.sgmodule
 //浏览器搜索 https://raw.githubusercontent.com/githubdulong/Script/master/Surge/Q-Search_All_in_one.sgmodule
-//京东半自动销卡 https://raw.githubusercontent.com/githubdulong/Script/master/Jd_unbindCard.sgmodule
-//TF下载修正 https://raw.githubusercontent.com/githubdulong/Script/master/Surge/TestFlightDownload.sgmodule
-//字幕翻译 https://raw.githubusercontent.com/Neurogram-R/Surge/master/module/Dualsub.sgmodule 指令https://www.icloud.com/shortcuts/136b52e6452b4a10b3ea647f925cddd0
 //跳过代理检测 https://raw.githubusercontent.com/mieqq/mieqq/master/skip-proxy-lists.sgmodule
 //SUB订阅管理 https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/config/Surge.sgmodule
 //模块更新捷径 https://www.icloud.com/shortcuts/67c3ace4fb3a4f9ebbe8d3184cd82e39
 
 [MITM]
-hostname = %INSERT% -*.amemv.com, -*.snssdk.com, *.googlevideo.com, ap*.intsig.net,api.meiyan.com,raw.githubusercontent.com, spclient.wg.spotify.com, ap?.bilibili.com, ap?.biliapi.net,btrace.qq.com,*.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com,security.wechat.com, api.polaxiong.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,lcs-mobile-cops.adobe.io, api.m.jd.com, gab.122.gov.cn, *.xmind.*, weather-data.apple.com, as.xiaojukeji.com, pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com, wallet.95516.com, pgdt.gtimg.cn, c.l.qq.com, api.daoshang.online, api.yangkeduo.com,api.pinduoduo.com, bkw-legacy.oss-cn-shenzhen.aliyuncs.com, edith.xiaohongshu.com
+hostname = raw.githubusercontent.com, spclient.wg.spotify.com, %APPEND% ap?.bilibili.com, ap?.biliapi.net, api.live.bilibili.com, www.bilibili.com, btrace.qq.com,*.tiktokv.com,*.byteoversea.com,*.tik-tokapi.com,security.wechat.com, api.polaxiong.com, api.weibo.cn, mapi.weibo.com, *.uve.weibo.com,lcs-mobile-cops.adobe.io, api.m.jd.com, gab.122.gov.cn, *.xmind.*, weather-data.apple.com, as.xiaojukeji.com, pt-starimg.didistatic.com, security.xiaojukeji.com, guard.sec.xiaojukeji.com, conf.diditaxi.com.cn, api.udache.com, res.xiaojukeji.com, shop-gw.chengxinyouxuan.com, img-ys011.didistatic.com, wallet.95516.com, pgdt.gtimg.cn, c.l.qq.com, api.daoshang.online, api.yangkeduo.com,api.pinduoduo.com, bkw-legacy.oss-cn-shenzhen.aliyuncs.com, edith.xiaohongshu.com
