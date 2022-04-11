@@ -1,4 +1,4 @@
-//https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js
+//流量统计： https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js
 
 let params = getParams($argument)
 
