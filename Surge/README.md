@@ -1,49 +1,33 @@
 感谢各位大佬！
 
 * [MuTu](https://github.com/githubdulong)
-
-* [NobyDa](https://github.com/NobyDa)
-
-* [chavyleung](https://github.com/chavyleung)/[gitee](https://gitee.com/chavyleung/scripts)
-
-* [yichahucha](https://github.com/yichahucha)
-
-* [langkhach270389](https://github.com/langkhach270389)
-
-* [Choler](https://github.com/Choler)
-
-* [Neurogram-R](https://github.com/Neurogram-R)
-
-* [Sunert](https://github.com/Sunert/Script)
-
-* [zZPiglet](https://github.com/zZPiglet/Task.git)
-
-* [Peng-YM](https://github.com/Peng-YM/QuanX)
-
-* [KOP-XIAO](https://github.com/KOP-XIAO/QuantumultX)
-
-* [lowking](https://github.com/lowking/Scripts)
-
-* [id77](https://github.com/id77/QuantumultX/tree/master)
-
-* [VirgilClyne](https://github.com/VirgilClyne)
-
+* [ConnersHua](https://github.com/DivineEngine/Profiles/tree/master)
 * [mieqq](https://github.com/mieqq/mieqq)
- 
+* [Yachen Liu](https://github.com/Blankwonder)
+* [maicoo](https://github.com/blankmagic/surge)
+* [Yichahucha](https://github.com/yichahucha/surge/tree/master)
+* [Hackl0us](https://github.com/Hackl0us)
+* [NobyDa](https://github.com/NobyDa)
+* [VirgilClyne](https://github.com/VirgilClyne)
+* [KOP-XIAO](https://github.com/KOP-XIAO)
+* [Peng-YM](https://github.com/Peng-YM)
+* [nzw9314](https://github.com/nzw9314)
+* [Tartarus2014](https://github.com/Tartarus2014)
+* [Semporia](https://github.com/Semporia)
+* [scomper](https://github.com/scomper/Surge)
+* [chavyleung](https://github.com/chavyleung)/[gitee](https://gitee.com/chavyleung/scripts)
+* [langkhach270389](https://github.com/langkhach270389)
+* [Choler](https://github.com/Choler)
+* [Neurogram-R](https://github.com/Neurogram-R)
+* [Sunert](https://github.com/Sunert/Script)
+* [zZPiglet](https://github.com/zZPiglet/Task.git)
+* [lowking](https://github.com/lowking/Scripts)
+* [id77](https://github.com/id77/QuantumultX/tree/master)
 * [dompling-2Y](https://github.com/dompling?tab=repositories)
-
 * [app2smile](https://github.com/app2smile/rules)
-
 * [anker1209](https://github.com/anker1209/Scriptable)
-
 * [Honye](https://github.com/Honye/scriptable-scripts/blob/master/README.zh.md)
-
-* [hackl0us](https://github.com/hackl0us)
-
 * [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script)
-
-* [DivineEngine](https://github.com/DivineEngine/Profiles/tree/master)
-
+* [Brian/TributePaulWalker](https://github.com/TributePaulWalker/) 
 * [Qure 图标](https://github.com/Koolson/Qure) 
-
 * [xinian 图标](https://github.com/58xinian/icon)
