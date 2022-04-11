@@ -57,6 +57,8 @@ URL-REGEX,^https?:\/\/api\.(pinduoduo|yangkeduo)\.com\/api\/cappuccino\/splash,�
 [Panel]
 策略面板 = script-name=缓存开关,update-interval=60
 策略面板 = script-name=代理选择,update-interval=300
+策略面板 = script-name=流量统计,update-interval=1
+策略面板 = script-name=网络信息,title=网络信息,content=请刷新,style=info,update-interval=60
 
 [Script]
 # > 新浪微博 去广告
@@ -101,6 +103,9 @@ http-response https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoo
 # > 策略面板
 缓存开关 = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/surgepro_flushdns.js,argument=icon=power.circle&color=#FF2121&title=𝕊𝕦𝕣𝕘𝕖ℙ𝕣𝕠
 代理选择 = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js,argument=icon=bolt.circle&color=#157EFB&group=代理选择
+流量统计 = type=generic,timeout=10,script-path= https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/trafficstatistics.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
+网络信息 = type=generic,timeout=5,script-path=https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/ipcheck.js ,argument=icon=arrow.up.arrow.down.circle&color=#5d84f8
+
 
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
 
