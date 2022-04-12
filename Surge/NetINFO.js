@@ -1,10 +1,7 @@
 /**
- * 𝑼𝑹𝑳: https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/NetINFO.js
+ * Surge 网络详情面板𝑼𝑹𝑳: https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/NetINFO.js
  * https://raw.githubusercontent.com/Nebulosa-Cat/Surge/main/Panel/Network-Info/Network-Info.sgmodule
- * Surge 网络详情面板
  * @Nebulosa-Cat
- * 详情请见 README
- * https://raw.githubusercontent.com/love499520/mask_angel/master/Net.js
  */
 const { wifi, v4, v6 } = $network;
 
