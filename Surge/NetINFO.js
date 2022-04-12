@@ -1,5 +1,6 @@
 /**
- * Surge 网络详情面板𝑼𝑹𝑳: https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/NetINFO.js
+ * 𝐒𝐮𝐫𝐠𝐞𝐏𝐫𝐨 网络详情面板
+ * 𝑼𝑹𝑳: https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/NetINFO.js
  * https://raw.githubusercontent.com/Nebulosa-Cat/Surge/main/Panel/Network-Info/Network-Info.sgmodule
  * @Nebulosa-Cat
  */
