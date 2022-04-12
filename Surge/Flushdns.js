@@ -1,5 +1,5 @@
+//𝑼𝑹𝑳：https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/Flushdns.js
 //https://github.com/githubdulong/Script/blob/master/surgepro_flushdns.js
-//
 
 let params = getParams($argument)
 
