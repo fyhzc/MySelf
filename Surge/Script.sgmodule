@@ -96,11 +96,11 @@ http-response https://api.live.bilibili.com/xlive/app-room/v1/index/getInfoByRoo
 空气质量 = type=http-response, pattern=^https?:\/\/weather-data\.apple\.com\/(v1|v2)\/weather.*(?!dataSets=forecastNextHour)(include=.*air_quality.*|dataSets=.*airQuality.*).*(country=[A-Z]{2})?.*, requires-body=1, timeout=15, script-path=https://raw.githubusercontent.com/VirgilClyne/iRingo/main/js/Apple_Weather.js
 
 # > 机场信息 
-机场信息 = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js
+#机场信息 = type=http-request,pattern=http://sub\.info,script-path=https://raw.githubusercontent.com/mieqq/mieqq/master/sub_info.js
 
 # > 策略面板
-缓存开关 = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/githubdulong/Script/master/surgepro_flushdns.js,argument=icon=power.circle&color=#FF2121&title=𝕊𝕦𝕣𝕘𝕖ℙ𝕣𝕠
-代理选择 = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js,argument=icon=bolt.circle&color=#157EFB&group=𝐏𝐫𝐨𝐱𝐲
+缓存开关 = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/Flushdns.js,argument=icon=power.circle&color=#FF2121&title=𝕊𝕦𝕣𝕘𝕖ℙ𝕣𝕠
+代理选择 = type=generic,timeout=15,script-path=https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/Panel.js,argument=icon=bolt.circle&color=#157EFB&group=𝐏𝐫𝐨𝐱𝐲
 
 Sub-Store = type=http-request,pattern=^https?:\/\/sub\.store,script-path=https://raw.githubusercontent.com/Peng-YM/Sub-Store/master/backend/sub-store.min.js,requires-body=true,timeout=120,max-size=131072
 
