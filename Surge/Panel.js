@@ -1,9 +1,9 @@
-//𝑼𝑹𝑳：
+//𝑼𝑹𝑳： https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/Panel.js
 // https://github.com/fishingworld/something/blob/main/groupPanel.js
 
 /*
 [Script]
-groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js,argument=icon=network&color=#86abee&group=Master
+groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/Panel.js,argument=icon=network&color=#86abee&group=Master
   对应参数：
 	icon：图标
 	color：图标颜色
