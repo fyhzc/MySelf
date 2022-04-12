@@ -2,8 +2,6 @@
 #!desc=𝐔𝐩𝐝𝐚𝐭𝐞: 2022.04.12 15:00
 
 [Rule]
-# > 爱奇艺 去暂停广告
-DOMAIN-SUFFIX,cupid.iqiyi.com,𝑹𝑬𝑱𝑬𝑪𝑻
 # 哔哩哔哩  去广告
 URL-REGEX,https://app.bilibili.com/x/v2/(splash|search/(defaultword|square)),𝑹𝑬𝑱𝑬𝑪𝑻
 URL-REGEX,https://api.bilibili.com/x/v2/dm/ad,𝑹𝑬𝑱𝑬𝑪𝑻
