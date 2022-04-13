@@ -1,6 +1,6 @@
 /**
  * 𝐒𝐮𝐫𝐠𝐞𝐏𝐫𝐨 网络详情面板
- * 𝑼𝑹𝑳: https://raw.githubusercontent.com/laoshur/Myself/master/Surge/NetINFO.js
+ * 𝑼𝑹𝑳: https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/NetINFO.js
  * https://raw.githubusercontent.com/Nebulosa-Cat/Surge/main/Panel/Network-Info/Network-Info.sgmodule
  */
 const { wifi, v4, v6 } = $network;
