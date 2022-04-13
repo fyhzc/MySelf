@@ -13,5 +13,5 @@ http:
       
 script-providers:
   camscanner:
-    url: https://raw.githubusercontent.com/laoshur/For-own-use/master/Script/CamScanner.js
+    url: https://raw.githubusercontent.com/laoshur/MySelf/master/Script/CamScanner.js
     interval: 3600
