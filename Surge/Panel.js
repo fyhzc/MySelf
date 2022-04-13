@@ -1,14 +1,17 @@
 // 𝑼𝑹𝑳： https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Panel.js
 //https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js
 /*
+
 [Script]
-groupPanel = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Panel.js,argument=icon=network&color=#86abee&group=Master
+代理选择 = type=generic,timeout=10,script-path=https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Panel.js,argument=icon=network&color=#86abee&group=𝐏𝐫𝐨𝐱𝐲
   对应参数：
 	icon：图标
 	color：图标颜色
 	group：策略组名称
+	
 [Panel]
-groupPanel = script-name=groupPanel,update-interval=5
+代理选择 = script-name=代理选择,update-interval=5
+
 */
 
 
