@@ -30,5 +30,3 @@
 * [@ACL4SSR](https://github.com/ACL4SSR)
 
 * [@blackmatrix7](https://github.com/blackmatrix7/ios_rule_script)
-
-* [@w37fhy](https://github.com/w37fhy/QuantumultX/)
