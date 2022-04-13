@@ -17,16 +17,36 @@
 任何以任何方式查看此项目的人或直接或间接使用该本项目的任何脚本的使用者都应仔细阅读此声明。本人保留随时更改或补充此免责声明的权利。一旦使用并复制了任何相关脚本或本项目的规则，则视为您已接受此免责声明.
 
 ### 特别感谢：
-* [@Tartarus2014](https://github.com/Tartarus2014/)
 
-* [@NobyDa](https://github.com/NobyDa)
 
-* [@lhie1](https://github.com/lhie1)
-
-* [@ConnersHua](https://github.com/DivineEngine)
-
-* [@chavyleung](https://github.com/chavyleung)
-
-* [@ACL4SSR](https://github.com/ACL4SSR)
-
-* [@blackmatrix7](https://github.com/blackmatrix7/ios_rule_script)
+* [ConnersHua](https://github.com/DivineEngine/Profiles/tree/master)
+* [MuTu](https://github.com/githubdulong)
+* [mieqq](https://github.com/mieqq/mieqq)
+* [Tartarus2014](https://github.com/Tartarus2014)
+* [lhie1](https://github.com/lhie1)
+* [Hackl0us](https://github.com/Hackl0us)
+* [NobyDa](https://github.com/NobyDa)
+* [nzw9314](https://github.com/nzw9314)
+* [Semporia](https://github.com/Semporia)
+* [scomper](https://github.com/scomper/Surge)
+* [maicoo](https://github.com/blankmagic/surge)
+* [Yichahucha](https://github.com/yichahucha/surge/tree/master)
+* [VirgilClyne](https://github.com/VirgilClyne)
+* [KOP-XIAO](https://github.com/KOP-XIAO)
+* [Peng-YM](https://github.com/Peng-YM)
+* [chavyleung](https://github.com/chavyleung)/[gitee](https://gitee.com/chavyleung/scripts)
+* [langkhach270389](https://github.com/langkhach270389)
+* [Choler](https://github.com/Choler)
+* [Neurogram-R](https://github.com/Neurogram-R)
+* [Sunert](https://github.com/Sunert/Script)
+* [zZPiglet](https://github.com/zZPiglet/Task.git)
+* [lowking](https://github.com/lowking/Scripts)
+* [id77](https://github.com/id77/QuantumultX/tree/master)
+* [dompling-2Y](https://github.com/dompling?tab=repositories)
+* [app2smile](https://github.com/app2smile/rules)
+* [anker1209](https://github.com/anker1209/Scriptable)
+* [Honye](https://github.com/Honye/scriptable-scripts/blob/master/README.zh.md)
+* [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script)
+* [Brian/TributePaulWalker](https://github.com/TributePaulWalker/) 
+* [Qure 图标](https://github.com/Koolson/Qure) 
+* [xinian 图标](https://github.com/58xinian/icon)
