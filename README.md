@@ -33,7 +33,6 @@
 * [KOP-XIAO](https://github.com/KOP-XIAO)
 * [Peng-YM](https://github.com/Peng-YM)
 * [chavyleung](https://github.com/chavyleung)/[gitee](https://gitee.com/chavyleung/scripts)
-* [langkhach270389](https://github.com/langkhach270389)
 * [Choler](https://github.com/Choler)
 * [Neurogram-R](https://github.com/Neurogram-R)
 * [Sunert](https://github.com/Sunert/Script)
