@@ -1,4 +1,4 @@
-//流量统计𝑼𝑹𝑳：https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/trafficstatistics.js
+//流量统计𝑼𝑹𝑳：https://raw.githubusercontent.com/laoshur/For-own-use/master/Surge/Trafficstatistics.js
 //https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js
 
 
