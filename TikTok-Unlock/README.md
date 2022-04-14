@@ -271,9 +271,9 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Shadowrocket/Tik
 **[视频教程](https://www.bilibili.com/video/BV1VQ4y1M77t)**
 
 ---
-### <a id="抖音"> 抖音無法觀看 </a>
+### <a id="抖音"> 抖音无法观看时 </a>
 
-在hostname中加上以下兩條
+在hostname中加上以下两条
 ```
 -*snssdk.com, -*amemv.com
 ```
