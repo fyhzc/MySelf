@@ -54,7 +54,7 @@ proxy-providers:
   #美国    
   US:
     <<: *Ser
-    filter: 美|🇺🇲|美国|洛杉矶|圣何塞|西雅图|US|(?i)States|American
+    filter: 美|🇺🇲|美国|US|(?i)States|American
     
   #香港
   HK:
@@ -84,7 +84,7 @@ proxy-providers:
   #其他
   other:
     <<: *Ser
-    filter: ^([^台美港日新狮洛杉矶圣何塞WSPGKao]|[^T]W|[^Ud]S|[^J]P|[^S]G|[^H]K|[^J]a|[^H]o)+$|AU
+    filter: ^([^台美港日新狮WSPGKao]|[^T]W|[^Ud]S|[^J]P|[^S]G|[^H]K|[^J]a|[^H]o)+$|AU
     
 c: &c
   type: http
