@@ -5,11 +5,7 @@
 > 目录
 
 * [TikTok](#TikTok)
-* [准备工作](#准备工作)
-* [Quantumult X](#Quantumult%20X)
-* [Loon](#Loon)
-* [Surge](#Surge)
-* [Shadowrocket](#Shadowrocket)
+* [操作步骤](#Surge)
 * [抓包降级](#抓包降级)
 * [抖音無法觀看](#抖音)
 
@@ -21,25 +17,17 @@
 * TikTok版本：v23.9.0（需要从抓包的21.1.0升级方可使用）
 * TikTok TestFlight (支持)
 * 下载方式：在 美区/日区/台区 App Store搜索 TikTok 并下载 （港区已停止运营）
-    * 支持功能：
 
-     - [x] 换区
-     - [x] 看视频
-     - [x] 发布视频
-     - [x] 点赞
-     - [x] 评论
-     - [x] TikTok直播
-
-
-### <a id="准备工作"> 准备工作 </a>
-
-
-- Appstore 下载 TikTok
-
-    * 美区/日区/台区/韩区等 Apple ID、密码 自备
 ---
 
-**特别说明**
+### 关于换区
+
+* 解锁并换区：将`CN`改为想看的国家/地区的2位`大写`英文简写，
+
+    * 在`HTTP复写`中，将`CN`的替换值改为`SG`、`MO`、`TW`等即可换区
+
+---
+### 特别说明
 
 1、为什么要先卸载TikTok，TikTok会在第一次使用时触发限制，并导致之后无法通过MiMt解密  
 2、所以先配置好规则之后，然后在下载TikTok，减少重定向的请求次数，降低风险，延长规则的寿命  
@@ -49,10 +37,7 @@
 
 ---
 
-### <a id="Surge"> Surge </a>
-
-
-**操作步骤**
+### <a id="Surge"> Surge </a>操作步骤
 
 1、打开`Surge`  
 
@@ -83,6 +68,7 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TiKok-US.s
 ```
 https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.list
 ```
+---
 
 ### <a id="抓包降级"> 抓包降级 TikTok 21.1.0 </a>
 **支持系统**  
@@ -148,23 +134,15 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.lis
 **[视频教程](https://www.bilibili.com/video/BV1VQ4y1M77t)**
 
 ---
-### <a id="抖音"> 抖音無法觀看 </a>
+### <a id="抖音"> 抖音无法观看时 </a>
 
-在hostname中加上以下兩條
+在hostname中加上以下两条
 ```
 -*snssdk.com, -*amemv.com
 ```
 使用说明
 ===
 
-不同观看地区的Tiktok解锁规则，一次仅能使用一个，`切勿重复使用!`，可以像图上一样导入多个，但仅启用一个
+不同观看地区的Tiktok解锁规则，一次仅能使用一个，`切勿多重勾选启用!`，可以如下图导入多个地区规则，但仅启用一个！
 
 ![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/Tiktok%E8%AF%B4%E6%98%8E.png)
-
-地区代码解释
-===
-- JP-日本 
-- KR-韩国 
-- SG-新加坡 
-- TW-台湾 
-- US-美国 
