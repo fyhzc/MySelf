@@ -1,6 +1,6 @@
 // 𝑼𝑹𝑳： https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Panel.js
 // 𝑭𝒓𝒐𝒎：https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js
-// 𝑼𝒑𝒅𝒂𝒕𝒆：2022.04.14 09:00
+// 𝐔𝐩𝐝𝐚𝐭𝐞：2022.04.14 09:00
 
 /*
 
