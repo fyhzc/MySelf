@@ -280,6 +280,6 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Shadowrocket/Tik
 使用说明
 ===
 
-不同观看地区的Tiktok解锁规则，一次仅能使用一个，`切勿重复使用!`，可以像图上一样导入多个，但仅启用一个
+不同观看地区的Tiktok解锁规则，一次仅能使用一个，`切勿多重勾选启用!`，可以如下图导入多个地区规则，但仅启用一个！
 
 ![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/Tiktok%E8%AF%B4%E6%98%8E.png)
