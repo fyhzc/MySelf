@@ -1,5 +1,5 @@
 
-**自用配置，改自网络。谨慎参考，酌情使用**
+**自用配置，改自网络   谨慎参考，酌情使用**
 ===
 
 **特别感谢[FEI](https://github.com/Infatuation-Fei/rule/tree/main/Stash)
