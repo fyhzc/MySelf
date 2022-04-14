@@ -2,7 +2,7 @@
 
 ### 特别感谢：
 
-* [ConnersHua](https://github.com/DivineEngine/Profiles/tree/master)
+* [DivineEngine[ConnersHua]](https://github.com/DivineEngine/Profiles/tree/master)
 * [MuTu](https://github.com/githubdulong)
 * [mieqq](https://github.com/mieqq/mieqq)
 * [Tartarus2014](https://github.com/Tartarus2014)
