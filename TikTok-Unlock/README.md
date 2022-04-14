@@ -1,6 +1,6 @@
-# iPhone （免拔卡）解锁 TikTok + 换区 + 发布视频 + 直播 + 点赞评论
+# TikTok 解锁  + 换区 + 发布视频 + 直播 + 点赞评论
 
-* [Semporia](https://github.com/Semporia/TikTok-Unlock)
+*感谢 [Semporia](https://github.com/Semporia/TikTok-Unlock)分享
 
 > 目录
 
