@@ -10,6 +10,7 @@
 * [fishingworld](https://github.com/fishingworld/something)
 * [Brian/TributePaulWalker](https://github.com/TributePaulWalker/) 
 * [VirgilClyne](https://github.com/VirgilClyne)
+* [Fei](https://github.com/Infatuation-Fei/rule/tree/main/Stash/)
 * [lhie1](https://github.com/lhie1)
 * [Hackl0us](https://github.com/Hackl0us)
 * [NobyDa](https://github.com/NobyDa)
