@@ -283,11 +283,3 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Shadowrocket/Tik
 不同观看地区的Tiktok解锁规则，一次仅能使用一个，`切勿重复使用!`，可以像图上一样导入多个，但仅启用一个
 
 ![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/Tiktok%E8%AF%B4%E6%98%8E.png)
-
-地区代码解释
-===
-- JP-日本 
-- KR-韩国 
-- SG-新加坡 
-- TW-台湾 
-- US-美国 
