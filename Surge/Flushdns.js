@@ -1,5 +1,6 @@
-//𝑼𝑹𝑳： https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Flushdns.js
-//https://raw.githubusercontent.com/githubdulong/Script/master/surgepro_flushdns.js
+// 𝑼𝑹𝑳： https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Flushdns.js
+// 𝑭𝒓𝒐𝒎：https://raw.githubusercontent.com/githubdulong/Script/master/surgepro_flushdns.js
+// 𝐔𝐩𝐝𝐚𝐭𝐞：2022.04.14 09:00
 
 let params = getParams($argument)
 
@@ -10,7 +11,6 @@ let dateNow = new Date()
 let dateTime = Math.floor(traffic.startTime*1000)
 let startTime = timeTransform(dateNow,dateTime)
 let title = params.title
-
 
 if ($trigger == "button") await httpAPI("/v1/dns/flush");
 
@@ -47,7 +47,6 @@ if(days==0){
 	}
 
 }
-
 
 function httpAPI(path = "", method = "POST", body = null) {
     return new Promise((resolve) => {
