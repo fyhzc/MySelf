@@ -1,5 +1,6 @@
-//流量统计𝑼𝑹𝑳：https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Trafficstatistics.js
-//https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js
+// 流量统计𝑼𝑹𝑳：https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Trafficstatistics.js
+// 𝑭𝒓𝒐𝒎：https://raw.githubusercontent.com/fishingworld/something/main/PanelScripts/trafficstatistics.js
+// 𝐔𝐩𝐝𝐚𝐭𝐞：2022.04.14 09:00
 
 
 let params = getParams($argument)
