@@ -1,6 +1,6 @@
 # TikTok 解锁  + 换区 + 发布视频 + 直播 + 点赞评论
 
-*感谢 [Semporia](https://github.com/Semporia/TikTok-Unlock)分享
+*感谢 [Semporia](https://github.com/Semporia/TikTok-Unlock)和[Fei](https://github.com/Infatuation-Fei/rule/tree/main/Stash/Rewrite/TikTokUnlock)的无私分享
 
 > 目录
 
