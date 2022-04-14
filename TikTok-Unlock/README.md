@@ -30,7 +30,7 @@
     * 在`HTTP复写`中，将`CN`的替换值改为`SG`、`MO`、`TW`等即可换区
 
 ---
-**特别说明**
+### 特别说明
 
 1、为什么要先卸载TikTok，TikTok会在第一次使用时触发限制，并导致之后无法通过MiMt解密  
 2、所以先配置好规则之后，然后在下载TikTok，减少重定向的请求次数，降低风险，延长规则的寿命  
@@ -39,8 +39,7 @@
 5、或者是软件是不是盗版，比如用共享ID下载的Quantumult X，有设备限制，是无法使用重写脚本功能的  
 
 ---
-
-**操作步骤**
+### <a id="Quantumult X"> Quantumult X </a>操作步骤
 
 1、打开`Quantumult X`  
 
@@ -107,10 +106,7 @@ https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.lis
 
 
 
-### <a id="Loon"> Loon </a>
-
-
-**操作步骤**
+### <a id="Loon"> Loon </a>操作步骤
 
 1、打开`Loon`  
 
@@ -144,10 +140,7 @@ https://raw.githubusercontent.com/Semporia/Loon/master/Rule/TikTok.list, tag=Tik
 
 ---
 
-### <a id="Surge"> Surge </a>
-
-
-**操作步骤**
+### <a id="Surge"> Surge </a>操作步骤
 
 1、打开`Surge`  
 
@@ -181,10 +174,7 @@ https://raw.githubusercontent.com/Semporia/TikTok-Unlock/master/Surge/TikTok.lis
 
 ---
 
-### <a id="Shadowrocket"> Shadowrocket </a>
-
-
-**操作步骤**
+### <a id="Shadowrocket"> Shadowrocket </a>操作步骤
 
 1、打开`Shadowrocket`  
 
