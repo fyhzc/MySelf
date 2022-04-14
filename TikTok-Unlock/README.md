@@ -5,7 +5,6 @@
 > 目录
 
 * [TikTok](#TikTok)
-* [准备工作](#准备工作)
 * [Quantumult X](#Quantumult%20X)
 * [Loon](#Loon)
 * [Surge](#Surge)
@@ -30,33 +29,23 @@
      - [x] 评论
      - [x] TikTok直播
 
-
-### <a id="准备工作"> 准备工作 </a>
-
-
-- Appstore 下载 TikTok
-
-    * 美区/日区/台区/韩区等 Apple ID、密码 自备
-
-
-- 自备 Quantumult X｜Loon｜Surge｜Shadowrocket
- 
-     * 可在美区/日区等 App Store 获取
-
-- 自备代理，ss/ssr/vmess等  
-
 ---
 
-### <a id="Quantumult X"> Quantumult X </a>
-
-**关于换区**
-
-
+### 关于换区
 
 * 解锁并换区：将`CN`改为想看的国家/地区的2位`大写`英文简写，
 
     * 在`HTTP复写`中，将`CN`的替换值改为`SG`、`MO`、`TW`等即可换区
 
+**特别说明**
+
+1、为什么要先卸载TikTok，TikTok会在第一次使用时触发限制，并导致之后无法通过MiMt解密  
+2、所以先配置好规则之后，然后在下载TikTok，减少重定向的请求次数，降低风险，延长规则的寿命  
+3、为什么配置好之后还是无法使用，请检查软件的证书有没有安装，信任，  
+4、或者是Https解密（MiMt）与重写（Rewrite）有没有开启  
+5、或者是软件是不是盗版，比如用共享ID下载的Quantumult X，有设备限制，是无法使用重写脚本功能的  
+
+---
 
 **操作步骤**
 
@@ -123,15 +112,7 @@ https://raw.githubusercontent.com/Semporia/Quantumult-X/master/Filter/TikTok.lis
 
 6、开启Quantumult X：前往Quantumult X的主页 → 找到`TikTok`策略 → 长按添加`节点` → TikTok愉快
 
-**特别说明**
 
-1、为什么要先卸载TikTok，TikTok会在第一次使用时触发限制，并导致之后无法通过MiMt解密  
-2、所以先配置好规则之后，然后在下载TikTok，减少重定向的请求次数，降低风险，延长规则的寿命  
-3、为什么配置好之后还是无法使用，请检查软件的证书有没有安装，信任，  
-4、或者是Https解密（MiMt）与重写（Rewrite）有没有开启  
-5、或者是软件是不是盗版，比如用共享ID下载的Quantumult X，有设备限制，是无法使用重写脚本功能的  
-
----
 
 ### <a id="Loon"> Loon </a>
 
