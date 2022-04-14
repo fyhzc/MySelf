@@ -10,7 +10,21 @@
 
 使用说明
 ---
-下载`Config.yaml`导入，然后打开编辑，根据内容提示替换链接即可，一定要注意不要粘贴多余的空格之类的。
+1.导入配置：选择“从URL下载”：https://raw.githubusercontent.com/laoshur/MySelf/master/Stash/Config.yaml
+2.替换订阅链接：从“编辑”进入，根据配置里的提示替换上自己的订阅链接即可，一定要注意不要粘贴多余的空格之类的。
+3.报错处理
+----
+导入配置，启动时如出现以下提示
+
+![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/%E7%AD%9B%E9%80%89%E9%94%99%E8%AF%AF.png)
+
+是因为不能从你的订阅链接里筛选到US(美国)节点，删掉US的`Proxy-Providers`里一整段与策略组使用的`use引用`这2处相关信息就可以了，即下图红圈标示出的两处：
+
+![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/%E7%AD%9B%E9%80%89%E5%88%A0%E9%99%A4.png)
+
+![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/%E7%AD%9B%E9%80%89%E5%88%A0%E9%99%A41.png)
+
+若确定你的链接中已包含相关节点，请在proxy-providers里filter后自行增加节点名称关键词，每个关键词之间用“|”隔开
 
 - 策略展示
 
@@ -28,17 +42,3 @@
 
 - 注意：
 因iOS严格限制NE内存，iOS15以下NE内存仅为15M(iOS15为50M)，且Clash内核相对占用内存较大，规则过多在低于iOS15的设备上无法启动；低于iOS15的越狱设备可自行修改NE内存限制后使用，方法自行谷歌搜索，建议至少改成100M+
-
-报错处理
-----
-导入配置，启动时如出现以下提示
-
-![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/%E7%AD%9B%E9%80%89%E9%94%99%E8%AF%AF.png)
-
-是因为不能从你的订阅链接里筛选到US(美国)节点，删掉US的`Proxy-Providers`里一整段与策略组使用的`use引用`这2处相关信息就可以了，即下图红圈标示出的两处：
-
-![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/%E7%AD%9B%E9%80%89%E5%88%A0%E9%99%A4.png)
-
-![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/%E7%AD%9B%E9%80%89%E5%88%A0%E9%99%A41.png)
-
-若确定你的链接中已包含相关节点，请在proxy-providers里filter后自行增加节点名称关键词，每个关键词之间用“|”隔开
