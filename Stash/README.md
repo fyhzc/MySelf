@@ -1,20 +1,16 @@
 
-**源自网络，仅供自用。谨慎参考，酌情使用**
+**自用配置，改自网络。谨慎参考，酌情使用**
 ===
 
 **特别感谢[FEI](https://github.com/Infatuation-Fei/rule/tree/main/Stash)
 
-`Config.yaml`，可以用于所有Clash Premium客户端
-
-本配置为自己写的自用配置改成的模板，未必适合所有人，请酌情使用，使用请详细阅读以下说明
+`Config.yaml`，原则上可用于所有Clash Premium客户端
 
 使用说明
 ---
 1.导入配置：选择“从URL下载”：https://raw.githubusercontent.com/laoshur/MySelf/master/Stash/Config.yaml
-2.替换订阅链接：从“编辑”进入，根据配置里的提示替换上自己的订阅链接即可，一定要注意不要粘贴多余的空格之类的。
-3.报错处理
-----
-导入配置，启动时如出现以下提示
+2.替换订阅：从“编辑”进入，根据配置里的提示替换上自己的订阅链接即可，一定要注意不要粘贴多余的空格之类的
+3.启动使用：正常情况下就可以点击“启动”按钮正常使用。如启动时如出现以下提示
 
 ![](https://raw.githubusercontent.com/Infatuation-Fei/explain/main/Picture/%E7%AD%9B%E9%80%89%E9%94%99%E8%AF%AF.png)
 
