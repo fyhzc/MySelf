@@ -1,5 +1,5 @@
 // 𝑼𝑹𝑳： https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Panel.js
-//https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js
+// 𝑭𝒓𝒐𝒎：https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js
 /*
 
 [Script]
