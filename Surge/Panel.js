@@ -1,6 +1,7 @@
 // 𝑼𝑹𝑳： https://raw.githubusercontent.com/laoshur/MySelf/master/Surge/Panel.js
 // 𝑭𝒓𝒐𝒎：https://raw.githubusercontent.com/fishingworld/something/main/groupPanel.js
 // 𝑼𝒑𝒅𝒂𝒕𝒆：2022.04.14 09:00
+
 /*
 
 [Script]
@@ -15,8 +16,6 @@
 
 */
 
-
-
 ;(async () => {
 
 let params = getParams($argument);
@@ -30,7 +29,6 @@ let allGroup = [];
 for (var key in proxy){
    allGroup.push(key)
     }
-
 
 for (let i = 0; i < arr.length; ++i) {
 proxyName.push(arr[i].name);
@@ -77,7 +75,6 @@ name=name + ' ➟ ' + rootName;
 		"icon-color":params.color
     });
 })();
-
 
 function httpAPI(path = "", method = "GET", body = null) {
     return new Promise((resolve) => {
